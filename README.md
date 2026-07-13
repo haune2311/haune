@@ -17,6 +17,14 @@ một trình duyệt thật.
 <img src="https://img.shields.io/badge/license-Proprietary%20%C2%B7%20All%20Rights%20Reserved-red" alt="Proprietary license">
 </p>
 
+<p align="center">
+<a href="https://github.com/haune2311/haune-antidetect/stargazers"><img src="https://img.shields.io/github/stars/haune2311/haune-antidetect?style=social" alt="GitHub stars"></a>
+&nbsp;<a href="https://github.com/haune2311/haune-antidetect/network/members"><img src="https://img.shields.io/github/forks/haune2311/haune-antidetect?style=social" alt="GitHub forks"></a>
+&nbsp;<a href="https://github.com/haune2311/haune-antidetect/watchers"><img src="https://img.shields.io/github/watchers/haune2311/haune-antidetect?style=social" alt="GitHub watchers"></a>
+</p>
+
+<p align="center"><b>⭐ Star</b> nếu Haune hữu ích — giúp người khác tìm thấy nó · <b>👁 Watch</b> để nhận update<br><sub><b>⭐ Star</b> if Haune helps — it helps others find it · <b>👁 Watch</b> for updates</sub></p>
+
 <table align="center">
 <tr>
 <td width="50%" align="center"><img src="docs/assets/test-deviceinfo.png" alt="You are human"><br><sub><b>deviceandbrowserinfo</b> — "You are human!" · <code>isBot: false</code></sub></td>
@@ -180,3 +188,15 @@ Every `seed` reproduces a device. For heavily-protected sites: add a residential
 © 2026 Haune Builder (github.com/haune2311). **All Rights Reserved.** Proprietary software —
 no copying, cloning, forking, modification, redistribution, or reuse in any form without the
 copyright holder's written permission. See [`LICENSE`](LICENSE).
+
+---
+
+## ⭐ Star History
+
+<p align="center">
+<a href="https://star-history.com/#haune2311/haune-antidetect&Date">
+<img src="https://api.star-history.com/svg?repos=haune2311/haune-antidetect&type=Date" alt="Star History Chart" width="600">
+</a>
+</p>
+
+<p align="center">Thấy hữu ích? <b><a href="https://github.com/haune2311/haune-antidetect">⭐ Star repo</a></b> &amp; <b>👁 Watch</b> để ủng hộ · Found it useful? <b>⭐ Star</b> &amp; <b>👁 Watch</b> to support.</p>

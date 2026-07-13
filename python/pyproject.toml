@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "haune"
+version = "1.0.0"
+description = "Haune — anti-detect browser. Drop-in Playwright launcher that drives the HauneBrowser stealth binary."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Proprietary" }
+authors = [{ name = "Haune" }]
+keywords = ["anti-detect", "fingerprint", "playwright", "stealth", "browser", "automation"]
+dependencies = [
+    "playwright>=1.40",
+    "requests>=2.28",
+]
+
+[project.urls]
+Homepage = "https://github.com/haune2311/haune"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["haune*"]

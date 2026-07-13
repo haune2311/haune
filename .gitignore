@@ -1,9 +1,9 @@
-# Haune — PUBLIC SHOWCASE repo.
+# Haune — PUBLIC repo.
 #
-# The implementation is PROPRIETARY and deliberately NOT published here: the C++
-# fingerprint patch set, the coherent identity generator, the Node/.NET launcher,
-# the build configs, and the internal design docs are kept private/local (see LICENSE).
-# This repo publishes only the overview (README) + license + a demo screenshot.
+# Published: the overview (README), license, a demo screenshot, and the THIN client
+# wrappers (python/) that just download + launch the binary. The IMPLEMENTATION stays
+# PROPRIETARY and is NOT published: the C++ fingerprint patch set, the coherent identity
+# generator, the build configs, and internal design docs are kept private/local (LICENSE).
 #
 # Strategy: ignore everything, then allow only the public files.
 
@@ -16,3 +16,8 @@
 !/docs/assets/
 /docs/assets/*
 !/docs/assets/*.png
+!/python/
+/python/**/__pycache__/
+/python/**/*.egg-info/
+/python/**/build/
+/python/**/dist/

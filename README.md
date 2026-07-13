@@ -67,13 +67,25 @@ Kiểm thử trên 30+ dịch vụ nhận diện bot:
 
 ### Bắt đầu nhanh
 
-**.NET 8:**
+Lần chạy đầu **tự tải browser** (self-contained, cache lại) — không cần cấu hình.
+
+**Python** — `pip install haune`
+
+```python
+from haune import launch
+
+browser = launch(proxy="http://user:pass@host:port")  # geoip tự bật khi có proxy
+page = browser.new_page()
+page.goto("https://example.com")
+browser.close()
+```
+
+**.NET 8** — `dotnet add package Haune`
 
 ```csharp
 using Haune;
 
 await using var browser = await HauneLauncher.LaunchAsync(new LaunchOptions {
-    Seed     = 12345,
     Proxy    = "http://user:pass@host:port",  // GeoIP + WebRTC tự bật khi có proxy
     Headless = false,
 });
@@ -81,13 +93,7 @@ var page = await browser.NewPageAsync();
 await page.GotoAsync("https://example.com");
 ```
 
-**Node:**
-
-```powershell
-node launcher/haune.js --seed 12345 --proxy http://user:pass@host:port https://example.com
-```
-
-Cần chống bot mạnh: thêm proxy residential + `humanize`. Xong.
+Mỗi `seed` tái lập một thiết bị. Cần chống bot mạnh: thêm proxy residential. Xong.
 
 ### Bản quyền & giấy phép
 
@@ -130,13 +136,25 @@ Tested against 30+ bot-detection services:
 
 ### Quick start
 
-**.NET 8:**
+First run **auto-downloads the browser** (self-contained, cached) — zero config.
+
+**Python** — `pip install haune`
+
+```python
+from haune import launch
+
+browser = launch(proxy="http://user:pass@host:port")  # geoip auto-enables with a proxy
+page = browser.new_page()
+page.goto("https://example.com")
+browser.close()
+```
+
+**.NET 8** — `dotnet add package Haune`
 
 ```csharp
 using Haune;
 
 await using var browser = await HauneLauncher.LaunchAsync(new LaunchOptions {
-    Seed     = 12345,
     Proxy    = "http://user:pass@host:port",  // GeoIP + WebRTC auto-enable with a proxy
     Headless = false,
 });
@@ -144,13 +162,7 @@ var page = await browser.NewPageAsync();
 await page.GotoAsync("https://example.com");
 ```
 
-**Node:**
-
-```powershell
-node launcher/haune.js --seed 12345 --proxy http://user:pass@host:port https://example.com
-```
-
-For heavily-protected sites: add a residential proxy + `humanize`. Done.
+Every `seed` reproduces a device. For heavily-protected sites: add a residential proxy. Done.
 
 ### License
 

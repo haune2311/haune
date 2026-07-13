@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/haune2311/haune"
+Homepage = "https://github.com/haune2311/haune-antidetect"
 
 [tool.setuptools.packages.find]
 where = ["."]

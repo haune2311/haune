@@ -11,7 +11,7 @@ public static class BinaryManager
     private const string ReleaseTag = "v1.0.0";
     private static readonly string Url =
         Environment.GetEnvironmentVariable("HAUNE_BROWSER_URL")
-        ?? $"https://github.com/haune2311/haune/releases/download/{ReleaseTag}/HauneBrowser-win-x64.zip";
+        ?? $"https://github.com/haune2311/haune-antidetect/releases/download/{ReleaseTag}/HauneBrowser-win-x64.zip";
     private static readonly string ExpectedSha256 =
         Environment.GetEnvironmentVariable("HAUNE_BROWSER_SHA256")
         ?? "1215f9005e703dbe01690d28b46f1d08a6572de5f1375b13a1b259905db9adcc";

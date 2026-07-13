@@ -21,7 +21,7 @@ import requests
 RELEASE_TAG = os.environ.get("HAUNE_BROWSER_TAG", "v1.0.0")
 DEFAULT_URL = os.environ.get(
     "HAUNE_BROWSER_URL",
-    f"https://github.com/haune2311/haune/releases/download/{RELEASE_TAG}/HauneBrowser-win-x64.zip",
+    f"https://github.com/haune2311/haune-antidetect/releases/download/{RELEASE_TAG}/HauneBrowser-win-x64.zip",
 )
 # SHA-256 of the release archive — verified before extraction so a tampered/compromised
 # mirror is rejected. Override with $HAUNE_BROWSER_SHA256 when pinning a different build.

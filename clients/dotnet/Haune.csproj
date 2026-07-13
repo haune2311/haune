@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+
+    <PackageId>Haune</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Haune</Authors>
+    <Company>Haune</Company>
+    <Description>HauneBrowser — anti-detect browser for .NET. Drop-in launcher that drives the HauneBrowser stealth binary (auto-downloaded) with coherent, seed-reproducible fingerprint identities. Windows x64.</Description>
+    <PackageTags>anti-detect;fingerprint;stealth;browser;playwright;automation</PackageTags>
+    <Copyright>© 2026 Haune. All Rights Reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/haune2311/haune</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Playwright" Version="1.49.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

@@ -21,3 +21,7 @@
 /python/**/*.egg-info/
 /python/**/build/
 /python/**/dist/
+!/clients/
+/clients/**/bin/
+/clients/**/obj/
+!/.github/

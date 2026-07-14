@@ -8,13 +8,13 @@ namespace Haune;
 /// The binary is a self-contained release archive; no source is shipped.</summary>
 public static class BinaryManager
 {
-    private const string ReleaseTag = "v1.0.0";
+    private const string ReleaseTag = "v1.0.1";
     private static readonly string Url =
         Environment.GetEnvironmentVariable("HAUNE_BROWSER_URL")
         ?? $"https://github.com/haune2311/haune-antidetect/releases/download/{ReleaseTag}/HauneBrowser-win-x64.zip";
     private static readonly string ExpectedSha256 =
         Environment.GetEnvironmentVariable("HAUNE_BROWSER_SHA256")
-        ?? "1215f9005e703dbe01690d28b46f1d08a6572de5f1375b13a1b259905db9adcc";
+        ?? "a9d2631d00ad195c18bbb14c1874a860dc9d2bf73be938b8105cb90054cff0e1";
 
     private static string CacheDir =>
         Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), ".haune", "bin", ReleaseTag);

@@ -18,7 +18,7 @@ from pathlib import Path
 import requests
 
 # The published release archive. Override with $HAUNE_BROWSER_URL for a private mirror.
-RELEASE_TAG = os.environ.get("HAUNE_BROWSER_TAG", "v1.0.1")
+RELEASE_TAG = os.environ.get("HAUNE_BROWSER_TAG", "v2.0.0")
 DEFAULT_URL = os.environ.get(
     "HAUNE_BROWSER_URL",
     f"https://github.com/haune2311/haune-antidetect/releases/download/{RELEASE_TAG}/HauneBrowser-win-x64.zip",
@@ -27,7 +27,7 @@ DEFAULT_URL = os.environ.get(
 # mirror is rejected. Override with $HAUNE_BROWSER_SHA256 when pinning a different build.
 EXPECTED_SHA256 = os.environ.get(
     "HAUNE_BROWSER_SHA256",
-    "a9d2631d00ad195c18bbb14c1874a860dc9d2bf73be938b8105cb90054cff0e1",
+    "401c67c5df3036f1b7c953be322fee951f30d4efa8184166261b9aa38d392c71",
 )
 
 _CACHE = Path.home() / ".haune" / "bin" / RELEASE_TAG

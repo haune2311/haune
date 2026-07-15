@@ -29,7 +29,7 @@ from ._geoip import resolve_exit
 from ._launch import build_args
 from .human import Human
 
-__version__ = "1.0.0"
+__version__ = "2.0.0"
 __all__ = ["launch", "launch_persistent_context", "HauneBrowser", "HauneContext", "Human"]
 
 

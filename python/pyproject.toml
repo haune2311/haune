@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "haune"
-version = "1.0.1"
+version = "2.0.0"
 description = "Haune — anti-detect browser. Drop-in Playwright launcher that drives the HauneBrowser stealth binary."
 readme = "README.md"
 requires-python = ">=3.9"

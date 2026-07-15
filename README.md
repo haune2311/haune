@@ -3,13 +3,13 @@
 <h3 align="center">Trình duyệt anti-detect vượt mọi bài test bot.</h3>
 
 <p align="center">
-Một bản Chromium 148 <strong>tự build</strong>, fingerprint được xử lý ngay trong lõi
+Một bản Chromium 150 <strong>tự build</strong>, fingerprint được xử lý ngay trong lõi
 trình duyệt — hệ thống antibot chấm điểm nó như một người dùng thật, vì nó hành xử như
 một trình duyệt thật.
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Chromium-148-4285F4" alt="Chromium 148">
+<img src="https://img.shields.io/badge/Chromium-150-4285F4" alt="Chromium 150">
 <img src="https://img.shields.io/badge/build-official-success" alt="official build">
 <img src="https://img.shields.io/badge/platform-Windows-0078D6" alt="Windows">
 <img src="https://img.shields.io/badge/API-.NET%208%20%C2%B7%20Node-512BD4" alt=".NET 8 / Node">
@@ -57,7 +57,7 @@ một trình duyệt thật.
 
 ### Haune là gì?
 
-Haune là trình duyệt chống-nhận-diện của riêng bạn — một bản Chromium 148 tự build, xử lý
+Haune là trình duyệt chống-nhận-diện của riêng bạn — một bản Chromium 150 tự build, xử lý
 fingerprint ở tầng lõi (không phải add-on, không phải script), kèm bộ sinh **danh tính mạch
 lạc tái lập từ seed**. Mỗi seed = một thiết bị ổn định, nhất quán từ UA đến GPU, fonts,
 timezone. Hơn **6 tỉ** danh tính duy nhất, không trùng.
@@ -126,7 +126,7 @@ thức nào nếu không có văn bản cho phép của chủ sở hữu. Xem [`
 
 ### What is Haune?
 
-Haune is your own anti-detect browser — a self-built Chromium 148 that handles fingerprints
+Haune is your own anti-detect browser — a self-built Chromium 150 that handles fingerprints
 in the browser core (not an add-on, not a script), with a generator of **coherent,
 seed-reproducible identities**. One seed = one stable device, consistent from UA to GPU,
 fonts and timezone. **6 billion+** unique, non-colliding identities.

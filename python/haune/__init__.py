@@ -15,10 +15,10 @@ Every ``seed`` reproduces the same device. With a proxy, timezone / geolocation 
 IP auto-match the exit (``geoip=True`` by default). ``spoof_gpu=True`` also spoofs the GPU
 string.
 
-Note: the binary handles *fingerprint* only. Behavioral *humanization* (human-like mouse /
-typing / scroll) is a driver-side concern, not compiled into the binary — drive input via
-Playwright's own APIs (``page.mouse`` / ``page.keyboard``). The .NET library ships a
-ready-made ``HumanPage`` helper; this Python client does not include one yet.
+Humanization: the ``Human`` helper (``from haune.human import Human``) drives human-like
+mouse / typing / scroll. It prefers the binary's NATIVE humanizer CDP commands (curved
+move with movementX/Y != 0, screenX != clientX, no kFromDebugger, getCoalescedEvents() > 1)
+and falls back to Playwright's own input if the binary predates them.
 """
 from __future__ import annotations
 
@@ -27,9 +27,10 @@ from playwright.sync_api import sync_playwright
 from ._binary import resolve_executable
 from ._geoip import resolve_exit
 from ._launch import build_args
+from .human import Human
 
 __version__ = "1.0.0"
-__all__ = ["launch", "launch_persistent_context", "HauneBrowser", "HauneContext"]
+__all__ = ["launch", "launch_persistent_context", "HauneBrowser", "HauneContext", "Human"]
 
 
 def _proxy_dict(proxy: str | None):
